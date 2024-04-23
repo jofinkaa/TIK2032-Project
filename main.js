@@ -10,9 +10,7 @@ function sendEmail(){
 
 
     Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "jofinkapalinggi@gmail.com",
-        Password : "BB31FB33CBDAF696656BB07AD501E15A45AD",
+        SecureToken :"99e8200d-0ea0-4a2b-80af-e4d199c78fe9",
         To : 'jofinkapalinggi@gmail.com',
         From : "jofinkapalinggi@gmail.com",
         Subject : subject.value,
@@ -73,6 +71,9 @@ form.addEventListener("submit", (e) => {
     checkInputs();
     if (!fullName.classList.contains("error") && !email.classList.contains("error") && !phone.classList.contains("error") && !subject.classList.contains("error") && !mess.classList.contains("error")) {
         sendEmail();
+
+        form.reset();
+        return false;
     }
    
 });
