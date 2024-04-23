@@ -7,16 +7,6 @@ a {
     color: inherit;
     text-decoration: none;
 }
-.medsos {
-    padding: 5px 0;
-    background-color: #DE48A9 ;
-}
-.medsos ul li {
-    display:inline-block;s
-    color: #fff;
-    margin-right: 10px;
-
-}
 .container {
     width: 80%;
     margin:0 auto ;
@@ -50,48 +40,53 @@ header nav li a:hover {
     background-color: #DE48A9;
     color: aliceblue;
 }
+body {
+    margin: 0; 
+    padding: 0; 
+    background-color: #e299e4; 
+    
+}
 .banner {
-    height: 60vh;
-    background-image: url(border2.jpeg);
-    background-size: cover;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center; 
+    align-items: center; 
 }
-.banner:after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(222, 72, 169, .6);
+.banner img {
+    border-radius: 50%; 
+    width: 300px;
+    height: 300px;
+    border: 10px solid #DE48A9;
+    float: right; 
+    margin-bottom: 10px;
 }
-.banner h2 {
-    color:aliceblue;
-    z-index: 1;
-    padding: 20px 25px;
-    border: 3px solid #fff;
-
+.banner h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    padding-left: 50px; 
 }
-section {
-    padding: 50px 0;
+.banner h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px o;
+    color: #fff;
+    padding-left: 50px; 
+}
+.medsos {
+    padding: 5px 0;
+    background-color: #DE48A9 ;
+}
+.medsos ul li {
+    display:inline-block;
+    margin-right: 100px;
+    color: #fff;
+    margin-left: auto; 
+    padding-left: 50px; 
 }
 section h3 {
-    text-align: center;
-    color: #DE48A9;
-    z-index: 1;
-    padding: 20px 25px;
-    border: 3px solid #DE48A9;
-}
-img {
-    height: 120vh;
-    width: 120vh;
-    align-items: center;
-    border:2px solid #DE48A9;
-
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    padding-left: 50px; 
 }
 article h2 {
     color: #DE48A9;
@@ -109,4 +104,111 @@ article p {
     padding: 20px 25px;
     border: 3px solid #DE48A9;
     text-align: center;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(125px,1fr));
+    margin: 0px;
+    align-items: center;
+    grid-gap: 30px;
+}
+img {
+    object-fit: cover;
+
+}
+.grid > img {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.grid > img:hover {
+    transform: scale(1.2);
+}
+@media (max-width:1000px) {
+    .grid {
+        grid-template-columns: repeat(1,1fr);
+
+    }
+}
+.gallery h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    padding-left: 50px; 
+}
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.contact form {
+    width: 600px;
+    text-align: center;
+
+}
+form .input-box {
+    display: flex;
+    justify-content: space-between;
+}
+.input-box .input-field {
+    width: 45%;
+
+}
+.field .item {
+    width: 100%;
+    padding: 18px;
+    background: transparent;
+    border: 2px solid #DE48A9;
+    outline: none;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #fff;
+    margin: 12px 0;
+}
+.field.error .item {
+    border-color:#d93025; 
+}
+.field .item::placeholder {
+    color: #fff;
+
+}
+
+.field .error-txt {
+    font-size: 14.5px;
+    color: #d93025;
+    text-align: left;
+    margin: -5px 0 10px;
+    display: none;
+}
+.field.error .error-txt {
+    display: block;
+}
+form .textarea-field .item {
+    resize: none;
+
+}
+form .tectarea-field .error-txt {
+    margin-top: -10px;
+}
+form button {
+    padding: 12px 32px;
+    background: #DE48A9;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #DE48A9;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+form button:hover {
+    box-shadow: none;
 }
