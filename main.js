@@ -1,3 +1,5 @@
+alert("Jangan ragu untuk menghubungi saya jika Anda memiliki pertanyaan ");
+
 const form = document.querySelector('form');
 const fullName = document.getElementById("name");
 const email = document.getElementById("email");
