@@ -12,7 +12,7 @@ $query_sql = "INSERT INTO login (username, password, email)
 
 if (mysqli_query($conn, $query_sql)) {
     
-    header("Location: index.html");
+    header("Location: home.html");
 } else {
    
     echo "Pendaftaran gagal: " . mysqli_error($conn);
