@@ -1,0 +1,32 @@
+body{
+    background-color:#DE48A9 ;
+}
+.input {
+    background-color: aliceblue;
+    width: 25%;
+    margin: 120px auto;
+    padding: 50px;
+    border-radius:6px ;
+    box-shadow: 0 0 10px #DE48A9;
+}
+.btn-input {
+    padding: 12px 32px;
+    background: #DE48A9;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #DE48A9;
+    font-size: 16px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.input h1{
+    color: #DE48A9; 
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px o;
+    justify-content: center;
+}
