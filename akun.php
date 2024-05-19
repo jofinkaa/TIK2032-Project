@@ -13,7 +13,7 @@ $stmt->execute();
 $result = $stmt->get_result();
 
 if ($result->num_rows > 0) {
-    header("Location: index.html");
+    header("Location: home.html");
     exit;
 } else {
     echo "<center><h1>Email atau password anda salah. Silahkan coba login kembali.</h1>
