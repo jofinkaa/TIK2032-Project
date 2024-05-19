@@ -29,7 +29,7 @@
             </a>
             <div class="button">
                 <p>Belum punya akun?
-                    <a href="index.html"> Buat akun disini</a>
+                    <a href="login.php"> Buat akun disini</a>
                 </p>
             </div>
         </form>
