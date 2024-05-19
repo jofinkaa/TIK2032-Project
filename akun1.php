@@ -24,12 +24,12 @@
                 <input type="password" name="pass" placeholder="Password">
 
             </div>
-            <a href="index.html">
+            <a href="home.html">
                 <button type="submit" name="login" class="btn-input">Login</button>
             </a>
             <div class="button">
                 <p>Belum punya akun?
-                    <a href="login.php"> Buat akun disini</a>
+                    <a href="index.html"> Buat akun disini</a>
                 </p>
             </div>
         </form>
